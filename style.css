@@ -1,0 +1,11 @@
+img {
+    float: right;
+}
+#skills {
+    display: flex;
+    gap: 20px;
+}
+#skills  img + li {
+    width: 10;
+    height: 10;
+}
