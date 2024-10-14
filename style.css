@@ -4,8 +4,65 @@ img {
 #skills {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
-#skills  img + li {
-    width: 10;
-    height: 10;
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin-top: 0px;
+    margin-right: 10px;
+    float: right;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+body {
+    background-color: azure;
+}
+#form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#contact-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgb(60, 60, 100);
+}
+@media screen and (min-width: 961px) {
+    nav {
+        margin-top: 0.4em;
+        padding-bottom: 0.4em;
+        font-weight: bold;
+        margin-top: -5.1em;
+        width: 60%;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    nav ul li {
+        border-radius: 1em;
+    }
+    header img {
+        height: 100px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    nav ul li {
+        display: inline-block;
+        border-radius: 1em;
+    }
+    .desktop {
+        display: none;
+    }
 }
